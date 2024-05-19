@@ -37,7 +37,7 @@
         <input type="checkbox" id="luxe_manicure" name="behandeling[]" value="Luxe manicure (massage en handpakking) €30">
         <label for="luxe_manicure">Luxe manicure (massage en handpakking) €30</label><br>
         <input type="checkbox" id="nagelreparatie" name="behandeling[]" value="Nagelreparatie per nagel (in eerste week gratis) €5">
-        <label for="nagelreparatie">Nagelreparatie per nagel (in eerste week gratis) €5</label><br><br>
+        <label for="nagelreparatie">Nagelreparatie per nagel (in eerste week gratis) €5,00</label><br><br>
 
         <input type="hidden" id="verzendingstijd" name="verzendingstijd"><br>
 
