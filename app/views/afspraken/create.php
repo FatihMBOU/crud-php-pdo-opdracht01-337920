@@ -12,48 +12,39 @@
     <div class="row mt-3">
         <div class="col-3"></div>
         <div class="col-6">
-            <form action="<?= URLROOT; ?>/afspraken/create" method="post">
-                <div class="mb-3">
-                    <label for="inputBasiskleur1" class="form-label">Basiskleur 1:</label>
-                    <input name="basiskleur1" type="text" class="form-control" id="inputBasiskleur1" placeholder="Vul hier de basiskleur 1 in">
-                </div>
-                <div class="mb-3">
-                    <label for="inputBasiskleur2" class="form-label">Basiskleur 2:</label>
-                    <input name="basiskleur2" type="text" class="form-control" id="inputBasiskleur2" placeholder="Vul hier de basiskleur 2 in">
-                </div>
-                <div class="mb-3">
-                    <label for="inputBasiskleur3" class="form-label">Basiskleur 3:</label>
-                    <input name="basiskleur3" type="text" class="form-control" id="inputBasiskleur3" placeholder="Vul hier de basiskleur 3 in">
-                </div>
-                <div class="mb-3">
-                    <label for="inputBasiskleur4" class="form-label">Basiskleur 4:</label>
-                    <input name="basiskleur4" type="text" class="form-control" id="inputBasiskleur4" placeholder="Vul hier de basiskleur 4 in">
-                </div>
-                <div class="mb-3">
-                    <label for="inputTelefoonnummer" class="form-label">Telefoonnummer:</label>
-                    <input name="telefoonnummer" type="text" class="form-control" id="inputTelefoonnummer" placeholder="Vul hier het telefoonnummer in">
-                </div>
-                <div class="mb-3">
-                    <label for="inputEmail" class="form-label">Email:</label>
-                    <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Vul hier het emailadres in">
-                </div>
-                <div class="mb-3">
-                    <label for="inputAfspraakdatum" class="form-label">Afspraakdatum:</label>
-                    <input name="afspraakdatum" type="datetime-local" class="form-control" id="inputAfspraakdatum">
-                </div>
-                <div class="mb-3">
-                    <label for="inputBehandeling" class="form-label">Behandeling:</label>
-                    <textarea name="behandeling" class="form-control" id="inputBehandeling" rows="3" placeholder="Vul hier de behandeling in"></textarea>
-                </div>
 
-                <div class="d-grid">
-                    <button type="submit" class="btn btn-success">Sla op</button>
-                </div>
-            </form>
-        </div>
-        <div class="col-3"></div>
-    </div>
+        <div class="container">
+    <h1>Bling Bling Nagelstudio Chantal</h1>
+    <form action="<?= URLROOT; ?>/afspraken/create" method="post">
+        <label for="basiskleur1">Kies 4 basiskleuren voor uw nagels:</label><br>
+        <input type="color" id="basiskleur1" name="basiskleur1" value="#ffcccc">
+        <input type="color" id="basiskleur2" name="basiskleur2" value="#9999ff">
+        <input type="color" id="basiskleur3" name="basiskleur3" value="#ff6699">
+        <input type="color" id="basiskleur4" name="basiskleur4" value="#ffff66"><br><br>
 
+        <label for="telefoonnummer">Uw telefoonnummer:</label><br>
+        <input type="tel" id="telefoonnummer" name="telefoonnummer" pattern="[0-9]{2} [0-9]{1} [0-9]{4} [0-9]{2} [0-9]{2}" placeholder="+31 6 2570 51 41" required><br><br>
+
+        <label for="email">Uw e-mailadres:</label><br>
+        <input type="email" id="email" name="email" placeholder="randomguy@nowhere.com" required><br><br>
+
+        <label for="afspraakdatum">Afspraak datum:</label><br>
+        <input type="datetime-local" id="afspraakdatum" name="afspraakdatum" required><br><br>
+
+        <label>Soort behandeling:</label><br>
+        <input type="checkbox" id="nagelbijt" name="behandeling[]" value="Nagelbijt arrangement (termijnbetaling mogelijk) €180">
+        <label for="nagelbijt">Nagelbijt arrangement (termijnbetaling mogelijk) €180</label><br>
+        <input type="checkbox" id="luxe_manicure" name="behandeling[]" value="Luxe manicure (massage en handpakking) €30">
+        <label for="luxe_manicure">Luxe manicure (massage en handpakking) €30</label><br>
+        <input type="checkbox" id="nagelreparatie" name="behandeling[]" value="Nagelreparatie per nagel (in eerste week gratis) €5">
+        <label for="nagelreparatie">Nagelreparatie per nagel (in eerste week gratis) €5</label><br><br>
+
+        <input type="hidden" id="verzendingstijd" name="verzendingstijd"><br>
+
+        <input type="submit" value="Sla op">
+        <input type="reset" value="Reset">
+    </form>
+</div>
     <div class="row mt-3">
         <div class="col-3"></div>
         <div class="col-6">
