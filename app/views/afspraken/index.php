@@ -6,7 +6,7 @@
             <h3><?= $data['title']; ?></h3>
         </div>
     </div>
-
+    <p><a href="<?= URLROOT; ?>/Afspraken/create">Nieuw Afspraak toevoegen</a></p>
     <div class="row">
         <div class="col-12">
             <table class="table table-hover">
