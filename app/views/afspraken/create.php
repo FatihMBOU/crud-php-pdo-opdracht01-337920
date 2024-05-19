@@ -14,7 +14,8 @@
         <div class="col-6">
 
         <div class="container">
-    <h1>Bling Bling Nagelstudio Chantal</h1>
+        <h1 style="color: #c28289;">Bling Bling Nagelstudio Chantal</h1>
+
     <form action="<?= URLROOT; ?>/afspraken/create" method="post">
         <label for="basiskleur1">Kies 4 basiskleuren voor uw nagels:</label><br>
         <input type="color" id="basiskleur1" name="basiskleur1" value="#ffcccc">
