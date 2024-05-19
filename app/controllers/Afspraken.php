@@ -44,6 +44,7 @@ class Afspraken extends BaseController
     /**
      * Toont het formulier voor het aanmaken van een nieuwe afspraak.
      */
+
     public function create()
     {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {

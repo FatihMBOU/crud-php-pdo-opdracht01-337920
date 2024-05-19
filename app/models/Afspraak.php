@@ -78,7 +78,7 @@ class Afspraak
             $this->db->bind(':afspraakdatum', $postData['afspraakdatum']);
             $this->db->bind(':behandeling', $postData['behandeling']);
             $this->db->bind(':verzendingstijd', date('Y-m-d H:i:s'));
-
+           
             // Voer de query uit zodat de gegevens naar de database worden geschreven
             return $this->db->execute();
         } catch (PDOException $e) {
