@@ -8,11 +8,11 @@
         </div>
         <div class="col-3"></div>
     </div>
-
+ 
     <div class="row mt-3">
         <div class="col-3"></div>
         <div class="col-6">
-
+        <a href="<?= URLROOT; ?>/homepages/index">Homepagina</a>
         <div class="container">
         <h1 style="color: #c28289;">Bling Bling Nagelstudio Chantal</h1>
 
@@ -49,7 +49,7 @@
     <div class="row mt-3">
         <div class="col-3"></div>
         <div class="col-6">
-            <a href="<?= URLROOT; ?>/homepages/index">Homepage</a>
+
         </div>
         <div class="col-3"></div>
     </div>
